@@ -18,7 +18,7 @@ class UserController extends AbstractController
     {
         // on appelle l'api qui retourne les utilisateurs
         $ch = curl_init();
-        curl_setopt($ch, CURLOPT_URL, "http://localhost/test-web-service/public/api/users");
+        curl_setopt($ch, CURLOPT_URL, "http://localhost/test-web-service/public/api/v1/users");
         $result = curl_exec($ch);
         curl_close($ch);
         
@@ -38,7 +38,7 @@ class UserController extends AbstractController
     {
         // on appelle l'api qui retourne 1 utilisateur selon l'ID passé en URL
         $ch = curl_init();
-        curl_setopt($ch, CURLOPT_URL, "http://localhost/test-web-service/public/api/users/".$id);
+        curl_setopt($ch, CURLOPT_URL, "http://localhost/test-web-service/public/api/v1/users/".$id);
         $result = curl_exec($ch);
         curl_close($ch);
         
