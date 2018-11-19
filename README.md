@@ -65,6 +65,8 @@ Voici quelques pistes pour améliorer l'application :
 
 - ajouter des contraintes d'accès à l'api via une clé sécurisé (avec token) qui limitera par exemple l'accès aux données dans le temps (fréquences des requêtes, etc.)
 
+- ajouter des options de requêtes pour par exemple permettre à l'utilisateur de choisir le format de fichier demandé (XML ou JSON) ou choisir la quantité de données (tous les 50 premiers utilisateurs)
+
 - s'appuyer une base de données plutôt qu'à un fichier csv pour stocker les données, la recherche sera plus puissante
 
 
